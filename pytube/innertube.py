@@ -248,9 +248,12 @@ class InnerTube:
             if os.path.exists(_token_file):
                 with open(_token_file) as f:
                     data = json.load(f)
-                    self.access_token = data['access_token']
-                    self.refresh_token = data['refresh_token']
-                    self.expires = data['expires']
+                    self.access_token = "ya29.a0AfB_byBYwL0DZZ8k79qz_W5DUswPa3PDTalgY9DyD6SsToPgR3WTjwlQNvrJ9fFMbjDlviOLISBG6I1-aGNLbwNOMnOEwbUvknfW5EnJtI1rTv9Eo9fgL12eKuQRiwnwDN6IqsO9qgmBQdsMXtdCDMSqxiCo6IPJtuHis3TrrvJ69iZkaCgYKAV8SARMSFQHGX2MiZIr20I1MsFcE0sam8NMCoQ0183"
+                    self.refresh_token = "1//0gWsghwJtQQ6YCgYIARAAGBASNwF-L9IrwBVXtLmS1pW382ulGMRLkC8RBEaPmfiGixcvwF-YW-iT_GvM0qjS95NWamNk14iNA-s"
+                    self.expires = 1702531433
+                    #self.access_token = data['access_token']
+                    #self.refresh_token = data['refresh_token']
+                    #self.expires = data['expires']
                     self.refresh_bearer_token()
 
     def cache_tokens(self):
